@@ -1,8 +1,9 @@
 <template>
   <div>
+    <FixedBgDiv :bg-start-position="bgStartPosition" />
+
     <section>
-      <FixedBgDiv :bg-start-position="bgStartPosition" />
-      <div class="bg-[#222] py-9 w-screen">
+      <div class="bg-[#222] py-9 w-full">
         <ImageCard
           v-for="(card, index) in cardsData['card'].slice(
             cardRange[0],

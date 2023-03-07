@@ -1,29 +1,39 @@
 <template>
   <div>
     <div
-      class="fixed top-0 left-0 right-0 z-10 transition-all duration-75 ease-out"
+      class="fixed w-full top-0 left-0 right-0 z-10 transition-all duration-75 ease-out"
       :class="{ '-translate-y-full': !scrolled }"
     >
       <NavBar class="lg:hidden" />
       <nav
-        class="flex items-center justify-center content-center flex-wrap justify-evenly z-20 max-lg:hidden"
+        class="grid grid-rows-1 grid-cols-[minmax(0,_1fr)_auto_minmax(0,_1fr)] gap-x-7 z-20 max-lg:hidden"
       >
-        <router-link to="/">O nás</router-link>
-        <router-link to="/day">Den D</router-link>
-        <router-link to="/program">Program</router-link>
-        <router-link to="/dress_code">Dress code</router-link>
-        <router-link to="/">
-          <!--          <img-->
-          <!--            alt="O nás"-->
-          <!--            src="@/assets/img/butterfly.png"-->
-          <!--            class="w-[95px] h-[77px]"-->
-          <!--          />-->
-          <div class="inicial">Zuzka & Matúš</div>
-        </router-link>
-        <router-link to="/map">Mapa</router-link>
-        <router-link to="/gifts">Tipy na dárky</router-link>
-        <router-link to="/menu">Svatbní menu</router-link>
-        <router-link to="/stars">Dúležité osoby</router-link>
+        <div
+          class="flex items-center justify-center content-center flex-wrap justify-between"
+        >
+          <router-link to="/">O nás</router-link>
+          <router-link to="/day">Den D</router-link>
+          <router-link to="/stars">Dúležité osoby</router-link>
+          <router-link to="/dress_code">Dress code</router-link>
+        </div>
+        <div>
+          <router-link to="/">
+            <!--          <img-->
+            <!--            alt="O nás"-->
+            <!--            src="@/assets/img/butterfly.png"-->
+            <!--            class="w-[95px] h-[77px]"-->
+            <!--          />-->
+            <div class="inicial">Zuzka & Matúš</div>
+          </router-link>
+        </div>
+        <div
+          class="flex items-center justify-center content-center flex-wrap justify-between"
+        >
+          <router-link to="/map">Mapa</router-link>
+          <router-link to="/gifts">Tipy na dárky</router-link>
+          <router-link to="/menu">Svatbní menu</router-link>
+          <router-link to="/program">Program</router-link>
+        </div>
       </nav>
     </div>
     <router-view> </router-view>
