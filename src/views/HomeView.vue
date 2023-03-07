@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative bg-cover bg-center bg-fixed bg-no-repeat"
+    class="relative bg-cover bg-center bg-fixed bg-no-repeat -z-10"
     :style="`background-image: url(${bgImg.url}); background-position: ${bgImg.bg_x}% ${bgImg.bg_y}%`"
   >
     <CardSection @before="moveDown" @after="moveUp" />
@@ -30,7 +30,6 @@ export default defineComponent({
     this.bgLength = this.bgJson.length;
   },
   methods: {
-    //make GLOBAL EMIT
     moveUp() {
       this.index = (this.index - 1 + this.bgLength) % this.bgLength;
       this.loadBg();

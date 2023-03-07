@@ -2,35 +2,52 @@
   "card": [
     {
       "img": "zuzka-matus-foto/img1.jpg",
+      "title": "Vitajte na našej stránke",
       "text": " Lorem Ipsum is simply dummy text of the printing and typesetting\n      industry. Lorem Ipsum has been the industrys standard dummy text ever\n      since the 1500s, when an unknown printer took a galley of type and\n      scrambled it to make a type specimen book. It has survived not only\n      "
     },
     {
       "img": "zuzka-matus-foto/img8.jpg",
+      "title": "Vitajte na našej stránke",
       "text": " Lorem Ipsum is simply dummy text of the printing and typesetting\n      industry. Lorem Ipsum has been the industrys standard dummy text ever\n      since the 1500s, when an unknown printer took a galley of type and\n      scrambled it to make a type specimen book. It has survived not only\n      "
     },
     {
       "img": "zuzka-matus-foto/img9.jpg",
+      "title": "Vitajte na našej stránke",
       "text": " Lorem Ipsum is simply dummy text of the printing and typesetting\n      industry. Lorem Ipsum has been the industrys standard dummy text ever\n      since the 1500s, when an unknown printer took a galley of type and\n      scrambled it to make a type specimen book. It has survived not only\n      "
+    },
+    {
+      "img": "map_hearts.png",
+      "title": "Medzinárodná svadba",
+      "text": "[:A od Prešova a od Prešova \n a od Prešova do Bernatic.:]\n[:Neše še Matúš, šerdečko mojo,\nneše še Matúš na autu.:]"
     },
 
     {
       "img": "zuzka-matus-foto/img2.jpg",
+      "title": "Vitajte na našej stránke",
       "text": " Lorem Ipsum is simply dummy text of the printing and typesetting\n      industry. Lorem Ipsum has been the industrys standard dummy text ever\n      since the 1500s, when an unknown printer took a galley of type and\n      scrambled it to make a type specimen book. It has survived not only\n      "
     },
     {
       "img": "zuzka-matus-foto/img3.jpg",
+      "title": "Vitajte na našej stránke",
       "text": " Lorem Ipsum is simply dummy text of the printing and typesetting\n      industry. Lorem Ipsum has been the industrys standard dummy text ever\n      since the 1500s, when an unknown printer took a galley of type and\n      scrambled it to make a type specimen book. It has survived not only\n      "
     },
     {
       "img": "zuzka-matus-foto/img4.jpg",
+      "title": "Vitajte na našej stránke",
       "text": " Lorem Ipsum is simply dummy text of the printing and typesetting\n      industry. Lorem Ipsum has been the industrys standard dummy text ever\n      since the 1500s, when an unknown printer took a galley of type and\n      scrambled it to make a type specimen book. It has survived not only\n      "
     },
     {
       "img": "zuzka-matus-foto/img11.jpg",
+      "title": "Vitajte na našej stránke",
       "text": " Lorem Ipsum is simply dummy text of the printing and typesetting\n      industry. Lorem Ipsum has been the industrys standard dummy text ever\n      since the 1500s, when an unknown printer took a galley of type and\n      scrambled it to make a type specimen book. It has survived not only\n      "
     }
   ],
   "bg": [
+    {
+      "url": "/IMG_2926-Edit.jpg",
+      "bg_x": 50.00,
+      "bg_y": 0.00
+    },
     {
       "url": "/img14.jpg",
       "bg_x": 50.00,

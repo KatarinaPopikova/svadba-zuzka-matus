@@ -5,13 +5,16 @@
     data-aos-duration="500"
     data-aos-delay="200"
   >
-    <div class="mx-9 my-3 flex flex-wrap max-w-7xl">
+    <div class="mx-9 my-3 flex flex-wrap max-w-7xl w-full">
       <div
         v-if="odd"
-        class="bg-white sm:w-1/2 h-96 flex flex-col justify-evenly items-center sm:rounded-l-lg max-sm:rounded-t-lg"
+        class="bg-white sm:w-1/2 w-full h-96 flex flex-col justify-evenly items-center sm:rounded-l-lg max-sm:rounded-t-lg"
       >
-        <h2 class="card-header">MŮJ ROK 2022 NA ENDURU</h2>
-        <p class="p-2 px-6 md:px-10">{{ cardData.text }}</p>
+        <h2 class="card-header">{{ cardData.title }}</h2>
+        <p
+          class="text w-full p-2 px-6 md:px-10"
+          v-html="cardData.text.replace(/\n/g, '&lt;br&gt;')"
+        ></p>
       </div>
       <div
         class="sm:w-1/2 h-96 w-full overflow-hidden"
@@ -29,10 +32,13 @@
       </div>
       <div
         v-if="!odd"
-        class="bg-white sm:w-1/2 h-96 flex flex-col justify-evenly items-center sm:rounded-r-lg max-sm:rounded-b-lg"
+        class="bg-white sm:w-1/2 w-full h-96 flex flex-col justify-evenly items-center sm:rounded-r-lg max-sm:rounded-b-lg"
       >
         <h2 class="card-header">MŮJ ROK 2022 NA ENDURU</h2>
-        <p class="p-2 px-6 sm:px-12">{{ cardData.text }}</p>
+        <p
+          class="text w-full p-2 px-6 sm:px-10"
+          v-html="cardData.text.replace(/\n/g, '&lt;br&gt;')"
+        ></p>
       </div>
     </div>
   </div>
@@ -65,9 +71,9 @@ export default defineComponent({
 <style scoped>
 .card-header {
   letter-spacing: 0.04em;
-  font-size: 1.875em;
+  font-size: 2.5em;
   line-height: 1.6;
-  font-family: sans-serif;
+  font-family: "Amatic SC", cursive;
 }
 .card-header::after {
   content: "";

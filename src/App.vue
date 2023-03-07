@@ -13,11 +13,12 @@
         <router-link to="/program">Program</router-link>
         <router-link to="/dress_code">Dress code</router-link>
         <router-link to="/">
-          <img
-            alt="O nás"
-            src="@/assets/img/butterfly.png"
-            class="w-[95px] h-[77px]"
-          />
+          <!--          <img-->
+          <!--            alt="O nás"-->
+          <!--            src="@/assets/img/butterfly.png"-->
+          <!--            class="w-[95px] h-[77px]"-->
+          <!--          />-->
+          <div class="inicial">Zuzka & Matúš</div>
         </router-link>
         <router-link to="/map">Mapa</router-link>
         <router-link to="/gifts">Tipy na dárky</router-link>
@@ -70,6 +71,7 @@ export default defineComponent({
 
 nav {
   padding: 30px;
+  font-size: 1.6em;
   transition: transform 0.05ms ease-out;
 }
 
@@ -78,7 +80,6 @@ nav {
 }
 
 nav a {
-  font-weight: bold;
   color: #ffffff;
   text-shadow: 1px 1px 2px #666;
 }

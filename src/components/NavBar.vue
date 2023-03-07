@@ -13,7 +13,7 @@
       <nav v-show="navOpen">
         <div class="sidemenu__wrapper">
           <ul class="sidemenu__list">
-            <li class="sidemenu__item">
+            <li @click="navOpen = false" class="sidemenu__item">
               <router-link to="/">O nás</router-link>
             </li>
             <li class="sidemenu__item">

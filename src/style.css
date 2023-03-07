@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Meow+Script&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+nav{
+    /*font-family: 'Meow Script', cursive;*/
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+}
+
+.inicial{
+    font-family: 'Meow Script', cursive;
+    font-size: 2em;
+    color: white;
+    font-weight: normal;
+}
+
+.text{
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.5em;
+}

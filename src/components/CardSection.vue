@@ -40,6 +40,7 @@ import json from "@/assets/json/card-data.json";
 export default defineComponent({
   name: "CardSection",
   components: { ImageCard },
+  emits: ["before", "after"],
   data() {
     return {
       cardsData: json,
@@ -51,14 +52,11 @@ export default defineComponent({
     this.bgImg = json["bg"][1];
   },
   methods: {
-    //make GLOBAL EMIT
     beforeImg() {
       this.$emit("before");
-      console.log("aa");
     },
     afterImg() {
       this.$emit("after");
-      console.log("bb");
     },
   },
 });
