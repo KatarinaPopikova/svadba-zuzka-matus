@@ -8,35 +8,61 @@
       <nav
         class="grid grid-rows-1 grid-cols-[minmax(0,_1fr)_auto_minmax(0,_1fr)] gap-x-7 z-20 max-lg:hidden"
       >
-        <div
-          class="flex items-center justify-center content-center flex-wrap justify-between"
-        >
-          <router-link to="/">O nás</router-link>
-          <router-link to="/day">Den D</router-link>
-          <router-link to="/stars">Dúležité osoby</router-link>
-          <router-link to="/dress_code">Dress code</router-link>
+        <div class="flex items-center content-center flex-wrap justify-between">
+          <a
+            :class="[{ active: activeSection === 'about-us' }, 'sectionLink']"
+            @click="scrollToSection('about-us')"
+            >O nás</a
+          >
+          <a
+            :class="[{ active: activeSection === 'about-us' }, 'sectionLink']"
+            @click="scrollToSection('about-us')"
+            >Den D</a
+          >
+          <a
+            :class="[{ active: activeSection === 'about-us' }, 'sectionLink']"
+            @click="scrollToSection('about-us')"
+            >Dúležité osoby</a
+          >
+          <a
+            :class="[{ active: activeSection === 'about-us' }, 'sectionLink']"
+            @click="scrollToSection('about-us')"
+            >Dress code</a
+          >
         </div>
         <div>
-          <router-link to="/">
-            <!--          <img-->
-            <!--            alt="O nás"-->
-            <!--            src="@/assets/img/butterfly.png"-->
-            <!--            class="w-[95px] h-[77px]"-->
-            <!--          />-->
+          <a
+            :class="[{ active: activeSection === 'about-us' }, 'sectionLink']"
+            @click="scrollToSection('home')"
+          >
             <div class="inicial">Zuzka & Matúš</div>
-          </router-link>
+          </a>
         </div>
-        <div
-          class="flex items-center justify-center content-center flex-wrap justify-between"
-        >
-          <router-link to="/map">Mapa</router-link>
-          <router-link to="/gifts">Tipy na dárky</router-link>
-          <router-link to="/menu">Svatbní menu</router-link>
-          <router-link to="/program">Program</router-link>
+        <div class="flex items-center content-center flex-wrap justify-between">
+          <a
+            :class="[{ active: activeSection === 'about-us' }, 'sectionLink']"
+            @click="scrollToSection('about-us')"
+            >Mapa</a
+          >
+          <a
+            :class="[{ active: activeSection === 'about-us' }, 'sectionLink']"
+            @click="scrollToSection('about-us')"
+            >Tipy na dárky</a
+          >
+          <a
+            :class="[{ active: activeSection === 'about-us' }, 'sectionLink']"
+            @click="scrollToSection('about-us')"
+            >Svatbní menu</a
+          >
+          <a
+            :class="[{ active: activeSection === 'about-us' }, 'sectionLink']"
+            @click="scrollToSection('about-us')"
+            >Program</a
+          >
         </div>
       </nav>
     </div>
-    <router-view> </router-view>
+    <home-view id="home" />
   </div>
 </template>
 
@@ -50,10 +76,10 @@ export default defineComponent({
   data() {
     return {
       scrolled: true,
+      activeSection: "home",
     };
   },
   mounted() {
-    console.log("icons from: https://www.flaticon.com/free-icons/arrow");
     window.addEventListener("scroll", this.handleScroll);
   },
 
@@ -62,7 +88,46 @@ export default defineComponent({
   },
   methods: {
     handleScroll() {
-      this.scrolled = window.scrollY == 0;
+      // this.scrolled = window.scrollY == 0;
+      const scrollPosition = window.scrollY;
+      const windowHeight = window.innerHeight;
+
+      // Calculate the position of each section
+      const sectionPositions = this.$el
+        .getElementsByClassName("sectionLink")
+        .map((element: HTMLAnchorElement) => {
+          const sectionTop = element.offsetTop;
+          const sectionHeight = element.offsetHeight;
+
+          return {
+            id: element.id,
+            top: sectionTop,
+            bottom: sectionTop + sectionHeight,
+          };
+        });
+
+      // Find the active section based on scroll position
+      let activeSection = "home";
+      for (const sectionPosition of sectionPositions) {
+        const { id, top, bottom } = sectionPosition;
+        if (
+          scrollPosition >= top &&
+          scrollPosition < bottom - windowHeight / 2
+        ) {
+          activeSection = id;
+          break;
+        }
+      }
+
+      // Update activeSection data
+      this.activeSection = activeSection;
+    },
+    scrollToSection(index: string) {
+      const sectionElement = this.$el.getElementById(index);
+      window.scrollTo({
+        top: sectionElement.offsetTop,
+        behavior: "smooth",
+      });
     },
   },
 });
@@ -94,7 +159,7 @@ nav a {
   text-shadow: 1px 1px 2px #666;
 }
 
-nav a.router-link-exact-active {
+nav a.active {
   color: #9b0707;
 }
 </style>
