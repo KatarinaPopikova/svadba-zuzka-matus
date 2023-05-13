@@ -25,15 +25,33 @@
 import { defineComponent } from "vue";
 import AboutUsView from "@/views/AboutUsView.vue";
 import MapView from "@/views/MapView.vue";
+import PeopleView from "@/views/PeopleView.vue";
+import FormView from "@/views/FormView.vue";
+import GiftsView from "@/views/GiftsView.vue";
+import TripView from "@/views/TripView.vue";
+import ProgramView from "@/views/ProgramView.vue";
 
 export default defineComponent({
   name: "HomeView",
-  components: { MapView, AboutUsView },
+  components: {
+    ProgramView,
+    TripView,
+    GiftsView,
+    FormView,
+    PeopleView,
+    MapView,
+    AboutUsView,
+  },
   data() {
     return {
       sections: [
         { name: "O nás", component: "AboutUsView" },
         { name: "Mapa", component: "MapView" },
+        // { name: "Program", component: "ProgramView" },
+        { name: "Výlet", component: "TripView" },
+        { name: "Dary", component: "GiftsView" },
+        { name: "Kontakty", component: "PeopleView" },
+        { name: "Formulár", component: "FormView" },
       ],
       activeIndex: 0,
     };
