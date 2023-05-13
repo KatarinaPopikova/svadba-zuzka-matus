@@ -6,8 +6,8 @@
       <div class="bg-[#222] py-9 w-full">
         <ImageCard
           v-for="(card, index) in cardsData['card'].slice(
-            cardRange?.[0],
-            cardRange?.[1]
+            cardRange[0],
+            cardRange[1]
           )"
           :card-data="card"
           :key="index"
