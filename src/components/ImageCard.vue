@@ -5,7 +5,7 @@
     data-aos-duration="500"
     data-aos-delay="200"
   >
-    <div class="mx-9 my-3 flex flex-wrap max-w-7xl w-full">
+    <div class="my-3 flex flex-wrap w-full">
       <div
         v-if="odd"
         class="bg-white sm:w-1/2 w-full h-96 flex flex-col justify-evenly items-center sm:rounded-l-lg max-sm:rounded-t-lg"

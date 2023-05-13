@@ -2,7 +2,7 @@
   <header ref="navbar" class="fixed w-full z-50 p-5 text-white shadow-2xl">
     <h1 class="text-6xl">Zuzka & Matúš</h1>
     <!--    <NavBar class="lg:hidden" />-->
-    <nav class="text-3xl font-bold">
+    <nav class="text-3xl font-bold pt-2">
       <ul class="flex justify-around items-center">
         <li v-for="(section, index) in sections" :key="index">
           <a

@@ -4,14 +4,38 @@
 
     <section>
       <div class="bg-[#222] py-9 w-full">
-        <ImageCard
-          v-for="(card, index) in cardsData['card'].slice(
-            cardRange?.[0],
-            cardRange?.[1]
-          )"
-          :card-data="card"
-          :key="index"
-        />
+        <div class="max-w-7xl mx-auto">
+          <div
+            class="grid grid-rows-1 grid-cols-[minmax(0,_1fr)_minmax(0,_1fr)] gap-x-20 mb-16"
+          >
+            <PersonCard
+              name="Zuzka"
+              :image-src="require('@/assets/img/usb/IMG_2864-Edit.jpg')"
+              description="Lorem Ipsum is simply dummy text of the printing and typesetting
+      industry. Lorem Ipsum has been the industrys standard dummy text ever
+      since the 1500s, when an unknown printer took a galley of type and
+      scrambled it to make a type specimen book. It has survived not only
+      "
+            />
+            <PersonCard
+              name="Matúš"
+              :image-src="require('@/assets/img/usb/IMG_2850-Edit.jpg')"
+              description="Lorem Ipsum is simply dummy text of the printing and typesetting
+      industry. Lorem Ipsum has been the industrys standard dummy text ever
+      since the 1500s, when an unknown printer took a galley of type and
+      scrambled it to make a type specimen book. It has survived not only
+      "
+            />
+          </div>
+          <ImageCard
+            v-for="(card, index) in cardsData['card'].slice(
+              cardRange?.[0],
+              cardRange?.[1]
+            )"
+            :card-data="card"
+            :key="index"
+          />
+        </div>
       </div>
     </section>
   </div>
@@ -22,7 +46,7 @@ import { defineComponent } from "vue";
 import ImageCard from "@/components/ImageCard.vue";
 export default defineComponent({
   name: "CardSection",
-  components: { FixedBgDiv, ImageCard },
+  components: { PersonCard, FixedBgDiv, ImageCard },
   props: {
     cardRange: {
       type: Array,
@@ -41,6 +65,7 @@ export default defineComponent({
 
 import json from "@/assets/json/card-data.json";
 import FixedBgDiv from "@/components/FixedBgDiv.vue";
+import PersonCard from "@/components/PersonCard.vue";
 </script>
 
 <style scoped></style>
