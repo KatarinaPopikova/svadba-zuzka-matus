@@ -1,5 +1,5 @@
 <template>
-  <header class="fixed w-full z-50 p-5">
+  <header class="fixed w-full z-50 p-5 text-white">
     <h1 class="text-6xl">Zuzka & Matúš</h1>
     <!--    <NavBar class="lg:hidden" />-->
     <nav class="text-3xl font-bold">
