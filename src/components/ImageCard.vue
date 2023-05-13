@@ -12,7 +12,7 @@
       >
         <h2 class="card-header">{{ cardData.title }}</h2>
         <p
-          class="text w-full p-2 px-6 md:px-10"
+          class="text-2xl w-full p-2 px-6 md:px-10"
           v-html="cardData.text.replace(/\n/g, '&lt;br&gt;')"
         ></p>
       </div>
@@ -36,7 +36,7 @@
       >
         <h2 class="card-header">MŮJ ROK 2022 NA ENDURU</h2>
         <p
-          class="text w-full p-2 px-6 sm:px-10"
+          class="text-2xl w-full p-2 px-6 sm:px-10"
           v-html="cardData.text.replace(/\n/g, '&lt;br&gt;')"
         ></p>
       </div>

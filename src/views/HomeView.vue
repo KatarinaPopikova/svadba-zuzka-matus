@@ -1,8 +1,8 @@
 <template>
-  <header class="fixed w-full">
-    <h1 class="page-title">Zuzka & Matúš</h1>
+  <header class="fixed w-full z-50 p-5">
+    <h1 class="text-6xl">Zuzka & Matúš</h1>
     <!--    <NavBar class="lg:hidden" />-->
-    <nav>
+    <nav class="text-3xl font-bold">
       <ul class="flex justify-between items-center">
         <li v-for="(section, index) in sections" :key="index">
           <a
@@ -76,17 +76,11 @@ export default defineComponent({
 </script>
 
 <style scoped>
-nav {
-  padding: 30px;
-  font-size: 1.6em;
-}
-
-nav a {
-  color: #ffffff;
-  text-shadow: 1px 1px 2px #666;
+h1 {
+  font-family: "Meow Script", cursive;
 }
 
 nav a.active {
-  color: #9b0707;
+  @apply text-red-700;
 }
 </style>
