@@ -1,12 +1,5 @@
 <template>
-  <div class="h-[100vh] flex justify-between items-center">
-    <div @click="moveUp">
-      <img class="icon" src="@/assets/img/left.png" alt="left arrow icon" />
-    </div>
-    <div @click="moveDown">
-      <img class="icon" src="@/assets/img/next.png" alt="right arrow icon" />
-    </div>
-  </div>
+  <div class="h-[100vh] flex justify-between items-center"></div>
 </template>
 
 <script lang="ts">
@@ -51,15 +44,6 @@ export default defineComponent({
   methods: {
     sendBgImg(index: number) {
       this.$parent?.$emit("bg", json["bg"][index]);
-    },
-    moveUp() {
-      this.index = (this.index - 1 + this.bgLength) % this.bgLength;
-      this.sendBgImg(this.index);
-    },
-
-    moveDown() {
-      this.index = (this.index + 1) % this.bgLength;
-      this.sendBgImg(this.index);
     },
   },
 });

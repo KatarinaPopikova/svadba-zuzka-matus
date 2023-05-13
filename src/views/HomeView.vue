@@ -1,9 +1,9 @@
 <template>
-  <header class="fixed w-full z-50 p-5 text-white">
+  <header ref="navbar" class="fixed w-full z-50 p-5 text-white shadow-2xl">
     <h1 class="text-6xl">Zuzka & Matúš</h1>
     <!--    <NavBar class="lg:hidden" />-->
     <nav class="text-3xl font-bold">
-      <ul class="flex justify-between items-center">
+      <ul class="flex justify-around items-center">
         <li v-for="(section, index) in sections" :key="index">
           <a
             @click="scrollToSection(index)"
@@ -39,7 +39,6 @@ export default defineComponent({
     };
   },
   mounted() {
-    console.log(this.$refs.section);
     window.addEventListener("scroll", this.handleScroll);
   },
   beforeUnmount() {
@@ -48,6 +47,15 @@ export default defineComponent({
   methods: {
     handleScroll() {
       const scrollPosition = window.scrollY;
+
+      const navbarTransparency = scrollPosition > 0 ? scrollPosition : 0;
+
+      (
+        this.$refs.navbar as HTMLElement
+      ).style.backgroundColor = `rgba(14,165,233,${
+        navbarTransparency / window.outerHeight
+      })`;
+
       let activeIndex = 0;
 
       const sections = this.$refs.section as HTMLElement[];
