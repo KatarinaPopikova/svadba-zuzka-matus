@@ -1,10 +1,14 @@
 <template>
   <header ref="navbar" class="fixed w-full z-50 p-5 text-white shadow-2xl">
-    <h1 class="text-6xl">Zuzka & Matúš</h1>
+    <h1 ref="title" class="text-6xl">Zuzka & Matúš</h1>
     <!--    <NavBar class="lg:hidden" />-->
     <nav class="text-3xl font-bold pt-2">
       <ul class="flex justify-around items-center">
-        <li v-for="(section, index) in sections" :key="index">
+        <li
+          v-for="(section, index) in sections"
+          :key="index"
+          class="cursor-pointer font-bold"
+        >
           <a
             @click="scrollToSection(index)"
             :class="{ active: activeIndex === index }"
@@ -46,7 +50,6 @@ export default defineComponent({
     return {
       sections: [
         { name: "O nás", component: "AboutUsView" },
-        { name: "Mapa", component: "MapView" },
         // { name: "Program", component: "ProgramView" },
         { name: "Výlet", component: "TripView" },
         { name: "Dary", component: "GiftsView" },
@@ -66,12 +69,25 @@ export default defineComponent({
     handleScroll() {
       const scrollPosition = window.scrollY;
 
-      const navbarTransparency = scrollPosition > 0 ? scrollPosition : 0;
+      let navbarTransparency = scrollPosition > 0 ? scrollPosition : 0;
+      navbarTransparency =
+        navbarTransparency > window.outerHeight
+          ? window.outerHeight
+          : navbarTransparency;
+
+      (this.$refs.navbar as HTMLElement).setAttribute(
+        "style",
+        `backdrop-filter: blur(${
+          (navbarTransparency / window.outerHeight) * 8
+        }px); -webkit-backdrop-filter: blur(${
+          (navbarTransparency / window.outerHeight) * 8
+        }px);`
+      );
 
       (
         this.$refs.navbar as HTMLElement
-      ).style.backgroundColor = `rgba(14,165,233,${
-        navbarTransparency / window.outerHeight
+      ).style.backgroundColor = `rgba(113,63,18,${
+        navbarTransparency / (window.outerHeight * 1.5)
       })`;
 
       let activeIndex = 0;
@@ -107,6 +123,6 @@ h1 {
 }
 
 nav a.active {
-  @apply text-red-700;
+  @apply text-blue-400;
 }
 </style>
