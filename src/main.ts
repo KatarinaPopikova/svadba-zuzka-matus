@@ -3,5 +3,33 @@ import App from "./App.vue";
 import router from "./router";
 import "./style.css";
 import "aos/dist/aos.css";
+import { library } from "@fortawesome/fontawesome-svg-core";
 
-createApp(App).use(router).mount("#app");
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import {
+  faRectangleList,
+  faTree,
+  faPersonHiking,
+  faUtensils,
+  faHandHoldingHeart,
+  faAddressBook,
+  faSquareCheck,
+  faIcons,
+} from "@fortawesome/free-solid-svg-icons";
+
+/* add icons to the library */
+library.add(
+  faRectangleList,
+  faTree,
+  faPersonHiking,
+  faUtensils,
+  faHandHoldingHeart,
+  faAddressBook,
+  faSquareCheck,
+  faIcons
+);
+
+createApp(App)
+  .use(router)
+  .component("font-awesome-icon", FontAwesomeIcon)
+  .mount("#app");
