@@ -47,7 +47,7 @@ export default defineComponent({
       sections: [
         { name: "O nás", component: "AboutUsView" },
         { name: "Mapa", component: "MapView" },
-        // { name: "Program", component: "ProgramView" },
+        { name: "Program", component: "ProgramView" },
         { name: "Výlet", component: "TripView" },
         { name: "Dary", component: "GiftsView" },
         { name: "Kontakty", component: "PeopleView" },

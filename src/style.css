@@ -22,7 +22,7 @@ h3 {
 }
 
 .p-full {
-    @apply text-xl;
+    @apply text-2xl;
 }
 
 /*body::-webkit-scrollbar {*/
