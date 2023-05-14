@@ -1,7 +1,7 @@
 <template>
   <section class="relative">
     <div
-      class="min-h-screen bg-orange-100 text-amber-900 flex justify-center items-center flex-col"
+      class="min-h-screen bg-green-50 text-green-900 flex justify-center items-center flex-col"
     >
       <div
         class="absolute top-0"
