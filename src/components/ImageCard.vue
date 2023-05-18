@@ -5,38 +5,40 @@
     data-aos-duration="500"
     data-aos-delay="200"
   >
-    <div class="my-3 flex flex-wrap w-full">
+    <div class="my-3 flex max-md:flex-col flex-wrap w-full">
       <div
         v-if="odd"
-        class="bg-white sm:w-1/2 w-full h-96 flex flex-col justify-evenly items-center sm:rounded-l-lg max-sm:rounded-t-lg"
+        class="bg-white md:w-1/2 w-full flex flex-col justify-evenly items-center md:rounded-l-lg max-md:rounded-t-lg"
+        style="height: 30rem"
       >
-        <h2 class="card-header">{{ cardData.title }}</h2>
+        <h2 class="card-header py-0">{{ cardData.title }}</h2>
         <p
           class="text-2xl w-full p-2 px-6 md:px-10"
           v-html="cardData.text.replace(/\n/g, '&lt;br&gt;')"
         ></p>
       </div>
       <div
-        class="sm:w-1/2 h-96 w-full overflow-hidden"
-        style="clip-path: inset(0)"
+        class="md:w-1/2 w-full overflow-hidden"
+        style="clip-path: inset(0); height: 30rem"
       >
         <img
           :src="require('@/assets/img/' + cardData.img + '')"
           class="h-full w-full object-cover"
           :class="{
-            'sm:rounded-l-lg  max-sm:rounded-t-lg': !odd,
-            'sm:rounded-r-lg  max-sm:rounded-b-lg': odd,
+            'md:rounded-l-lg  max-md:rounded-t-lg': !odd,
+            'md:rounded-r-lg  max-md:rounded-b-lg': odd,
           }"
           :alt="cardData.img"
         />
       </div>
       <div
         v-if="!odd"
-        class="bg-white sm:w-1/2 w-full h-96 flex flex-col justify-evenly items-center sm:rounded-r-lg max-sm:rounded-b-lg"
+        class="bg-white md:w-1/2 w-full flex flex-col justify-evenly items-center md:rounded-r-lg max-md:rounded-b-lg"
+        style="height: 30rem"
       >
-        <h2 class="card-header">MŮJ ROK 2022 NA ENDURU</h2>
+        <h2 class="card-header py-0">MŮJ ROK 2022 NA ENDURU</h2>
         <p
-          class="text-2xl w-full p-2 px-6 sm:px-10"
+          class="text-2xl w-full p-2 px-6 nd:px-10"
           v-html="cardData.text.replace(/\n/g, '&lt;br&gt;')"
         ></p>
       </div>

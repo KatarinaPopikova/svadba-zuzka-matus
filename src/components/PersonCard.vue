@@ -34,8 +34,8 @@ export default defineComponent({
     <div>
       <img :src="this.imageSrc" alt="person" />
     </div>
-    <div class="p-3">
-      <h2 class="text-6xl">{{ this.name }}</h2>
+    <div class="p-8">
+      <h2 class="text-6xl py-0 mb-6">{{ this.name }}</h2>
       <div class="mt-2 text-2xl">{{ this.description }}</div>
     </div>
   </div>
