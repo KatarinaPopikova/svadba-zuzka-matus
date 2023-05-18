@@ -31,8 +31,8 @@ export default defineComponent({
     data-aos-duration="500"
     data-aos-delay="200"
   >
-    <div class="object-cover">
-      <img class="w-full" :src="this.imageSrc" alt="person" />
+    <div>
+      <img :src="this.imageSrc" alt="person" />
     </div>
     <div class="p-3">
       <h2 class="text-6xl">{{ this.name }}</h2>
