@@ -3,10 +3,10 @@
     <FixedBgDiv :bg-start-position="bgStartPosition" />
 
     <section>
-      <div class="bg-[#222] py-9 w-full">
+      <div class="bg-[#222] py-16 w-full">
         <div class="max-w-7xl mx-auto">
           <div
-            class="grid grid-rows-1 grid-cols-[minmax(0,_1fr)_minmax(0,_1fr)] gap-x-20 mb-16"
+            class="grid grid-rows-1 md:grid-cols-[minmax(0,_1fr)_minmax(0,_1fr)] max-md:grid-cols-1 gap-20 mb-16"
           >
             <PersonCard
               name="Zuzka"
