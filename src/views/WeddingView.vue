@@ -82,14 +82,16 @@
               src="@/assets/img/fohrHe.jpeg"
               alt="Kulturní dům"
             />
-            <p class="font-p">
-              <strong class="mr-2">Kde: </strong>Kulturní dům Bernartice nad
-              Odrou (vstup od parkoviště)
-            </p>
-            <p class="pl-8 font-p">Bernartice nad Odrou 103</p>
-            <p class="font-p mt-2">
-              <strong class="mr-2">Kdy: </strong>od 17:00
-            </p>
+            <div class="w-80">
+              <p class="font-p">
+                <strong class="mr-2">Kde: </strong>Kulturní dům Bernartice nad
+                Odrou (vstup od parkoviště)
+              </p>
+              <p class="pl-8 font-p">Bernartice nad Odrou 103</p>
+              <p class="font-p mt-2">
+                <strong class="mr-2">Kdy: </strong>od 17:00
+              </p>
+            </div>
           </div>
         </div>
         <div data-aos="fade-up" data-aos-duration="200" data-aos-delay="200">
@@ -121,6 +123,6 @@ export default {
   @apply w-24 h-24 rounded-full mx-2 my-5;
 }
 .font-p {
-  @apply text-xl text-left w-96;
+  @apply text-xl text-left w-80;
 }
 </style>
