@@ -10,32 +10,25 @@
       <span class="bottom"></span>
     </button>
     <transition name="translateX">
-      <nav v-show="navOpen">
+      <nav
+        v-show="navOpen"
+        class="text-3xl font-bold flex flex-col justify-center"
+      >
         <div class="sidemenu__wrapper">
           <ul class="sidemenu__list">
-            <li @click="navOpen = false" class="sidemenu__item">
-              <router-link to="/">O nás</router-link>
-            </li>
-            <li class="sidemenu__item">
-              <router-link to="/day">Den D</router-link>
-            </li>
-            <li class="sidemenu__item">
-              <router-link to="/program">Program</router-link>
-            </li>
-            <li class="sidemenu__item">
-              <router-link to="/dress_code">Dress code</router-link>
-            </li>
-            <li class="sidemenu__item">
-              <router-link to="/map">Mapa</router-link>
-            </li>
-            <li class="sidemenu__item">
-              <router-link to="/gifts">Tipy na dárky</router-link>
-            </li>
-            <li class="sidemenu__item">
-              <router-link to="/menu">Svatbní menu</router-link>
-            </li>
-            <li class="sidemenu__item">
-              <router-link to="/stars">Dúležité osoby</router-link>
+            <li
+              v-for="(section, index) in sections"
+              :key="index"
+              class="cursor-pointer font-bold"
+            >
+              <a
+                @click="
+                  scrollToSection(index);
+                  navOpen = false;
+                "
+                :class="{ active: activeIndex === index }"
+                >{{ section.name }}</a
+              >
             </li>
           </ul>
         </div>
@@ -51,6 +44,20 @@ export default {
     return {
       navOpen: false,
     };
+  },
+  props: {
+    sections: {
+      type: Array,
+      required: true,
+    },
+    activeIndex: {
+      type: Number,
+      required: true,
+    },
+    scrollToSection: {
+      type: Function,
+      required: true,
+    },
   },
 };
 </script>
@@ -84,7 +91,7 @@ export default {
   width: 20px;
   height: 2px;
   margin: auto;
-  background: rgb(96, 90, 90);
+  background: white;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -112,10 +119,6 @@ export default {
 
 #sidemenu .active .bottom {
   transform: rotate(45deg);
-}
-
-.sidemenu__wrapper {
-  padding-top: 50px;
 }
 
 .sidemenu__list {

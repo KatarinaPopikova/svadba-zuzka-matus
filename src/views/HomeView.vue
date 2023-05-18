@@ -1,8 +1,13 @@
 <template>
   <header ref="navbar" class="fixed w-full z-50 p-5 text-white shadow-2xl">
     <h1 ref="title" class="text-6xl">Zuzka & Matúš</h1>
-    <!--    <NavBar class="lg:hidden" />-->
-    <nav class="text-3xl font-bold pt-2">
+    <NavBar
+      class="lg:hidden"
+      :sections="sections"
+      :active-index="activeIndex"
+      :scroll-to-section="scrollToSection"
+    />
+    <nav class="text-3xl font-bold pt-2 max-lg:hidden">
       <ul class="flex justify-around items-center">
         <li
           v-for="(section, index) in sections"
@@ -36,10 +41,12 @@ import TripView from "@/views/TripView.vue";
 import ProgramView from "@/views/ProgramView.vue";
 import TraditionView from "@/views/TraditionView.vue";
 import AccommodationView from "@/views/AccommodationView.vue";
+import NavBar from "@/components/NavBar.vue";
 
 export default defineComponent({
   name: "HomeView",
   components: {
+    NavBar,
     AccommodationView,
     TraditionView,
     ProgramView,
@@ -94,14 +101,14 @@ export default defineComponent({
       (
         this.$refs.navbar as HTMLElement
       ).style.backgroundColor = `rgba(113,63,18,${
-        navbarTransparency / (window.outerHeight * 1.5)
+        navbarTransparency / (window.outerHeight * 1.2)
       })`;
 
       let activeIndex = 0;
 
       const sections = this.$refs.section as HTMLElement[];
       sections.forEach((section: HTMLElement, index: number) => {
-        const topOffset = section.offsetTop;
+        const topOffset = section.offsetTop - 144;
         const bottomOffset = topOffset + section.offsetHeight;
 
         if (scrollPosition >= topOffset && scrollPosition < bottomOffset) {
@@ -115,7 +122,7 @@ export default defineComponent({
       const sectionElement = (this.$refs.section as HTMLElement[])[index];
       if (sectionElement) {
         window.scrollTo({
-          top: sectionElement.offsetTop,
+          top: sectionElement.offsetTop - 144,
           behavior: "smooth",
         });
       }
@@ -127,9 +134,5 @@ export default defineComponent({
 <style scoped>
 h1 {
   font-family: "Meow Script", cursive;
-}
-
-nav a.active {
-  @apply text-blue-400;
 }
 </style>

@@ -24,6 +24,11 @@ h3 {
     @apply text-2xl;
 }
 
+
+nav a.active {
+    @apply text-blue-400;
+}
+
 /*body::-webkit-scrollbar {*/
 /*    width: 12px;               !* width of the entire scrollbar *!*/
 /*}*/

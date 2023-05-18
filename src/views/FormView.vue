@@ -33,9 +33,10 @@
               zodpověděli několik otázek, ať víme, s čím a s kým počítat.
             </p>
           </div>
-          <div class="mt-32 p-4 border-2 border-white w-fit text-xl">
+          <div class="mt-32 border-2 border-white w-fit text-xl">
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSeN0iA612AOrErB-blfc-38F_l1zYoMX63FbljYGwSvm0C8SA/viewform?usp=sf_link"
+              class="p-4 block"
             >
               <font-awesome-icon
                 icon="fa-solid fa-rectangle-list"
