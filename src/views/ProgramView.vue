@@ -1,7 +1,7 @@
 <template>
   <section class="relative">
     <div
-      class="min-h-screen bg-blue-800 text-[#69c9f5] flex justify-center items-center flex-col"
+      class="min-h-screen px-2 bg-blue-800 text-[#69c9f5] flex justify-center items-center flex-col"
     >
       <div
         class="absolute top-0"
@@ -21,7 +21,7 @@
         <div class="max-w-screen-sm flex items-center flex-col">
           <div>
             <div
-              class="flex items-center"
+              class="flex justify-center lg:py-2"
               data-aos="fade-up"
               data-aos-duration="100"
               data-aos-delay="100"
@@ -34,7 +34,7 @@
             </div>
 
             <div
-              class="flex items-center"
+              class="flex items-center lg:py-2"
               data-aos="fade-up"
               data-aos-duration="100"
               data-aos-delay="100"
@@ -46,7 +46,7 @@
               <div class="program-description text-left"></div>
             </div>
             <div
-              class="flex items-center"
+              class="flex items-center lg:py-2"
               data-aos="fade-up"
               data-aos-duration="100"
               data-aos-delay="100"
@@ -58,7 +58,7 @@
               </div>
             </div>
             <div
-              class="flex items-center"
+              class="flex items-center lg:py-2"
               data-aos="fade-up"
               data-aos-duration="100"
               data-aos-delay="100"
@@ -70,7 +70,7 @@
               <div class="program-description text-left"></div>
             </div>
             <div
-              class="flex items-center"
+              class="flex items-center lg:py-2"
               data-aos="fade-up"
               data-aos-duration="100"
               data-aos-delay="100"
@@ -83,7 +83,7 @@
             </div>
 
             <div
-              class="flex items-center"
+              class="flex items-center lg:py-2"
               data-aos="fade-up"
               data-aos-duration="100"
               data-aos-delay="100"
@@ -95,7 +95,7 @@
               <div class="program-description text-left"></div>
             </div>
             <div
-              class="flex items-center"
+              class="flex items-center lg:py-2"
               data-aos="fade-up"
               data-aos-duration="100"
               data-aos-delay="100"
@@ -108,7 +108,7 @@
             </div>
 
             <div
-              class="flex items-center"
+              class="flex items-center lg:py-2"
               data-aos="fade-up"
               data-aos-duration="100"
               data-aos-delay="100"
@@ -118,7 +118,7 @@
               <div class="program-description text-left"></div>
             </div>
             <div
-              class="flex items-center"
+              class="flex items-center lg:py-2"
               data-aos="fade-up"
               data-aos-duration="100"
               data-aos-delay="100"
@@ -131,7 +131,7 @@
             </div>
 
             <div
-              class="flex items-center"
+              class="flex items-center lg:py-2"
               data-aos="fade-up"
               data-aos-duration="100"
               data-aos-delay="100"
@@ -143,7 +143,7 @@
               <div class="program-description text-left"></div>
             </div>
             <div
-              class="flex items-center"
+              class="flex items-center lg:py-2"
               data-aos="fade-up"
               data-aos-duration="100"
               data-aos-delay="100"
@@ -156,7 +156,7 @@
             </div>
 
             <div
-              class="flex items-center"
+              class="flex items-center py-1 lg:py-2"
               data-aos="fade-up"
               data-aos-duration="100"
               data-aos-delay="100"
@@ -166,7 +166,7 @@
               <div class="program-description text-left"></div>
             </div>
             <div
-              class="flex items-center"
+              class="flex items-center py-1 lg:py-2"
               data-aos="fade-up"
               data-aos-duration="100"
               data-aos-delay="100"
@@ -204,9 +204,9 @@ export default {
 
 <style scoped>
 .program-description {
-  @apply w-[10rem] sm:w-[15rem] lg:w-[28rem] text-2xl px-1;
+  @apply w-[8rem] sm:w-[15rem] lg:w-[28rem] text-2xl px-1;
 }
 .program-time {
-  @apply font-bold text-2xl flex-col w-14 mx-2 sm:mx-5 lg:py-2;
+  @apply font-bold text-2xl flex-col w-14 mx-2 sm:mx-5;
 }
 </style>
