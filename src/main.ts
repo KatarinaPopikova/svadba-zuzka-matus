@@ -15,6 +15,11 @@ import {
   faAddressBook,
   faSquareCheck,
   faIcons,
+  faCar,
+  faMapLocationDot,
+  faRing,
+  faStar,
+  faUpRightFromSquare,
 } from "@fortawesome/free-solid-svg-icons";
 
 /* add icons to the library */
@@ -26,7 +31,12 @@ library.add(
   faHandHoldingHeart,
   faAddressBook,
   faSquareCheck,
-  faIcons
+  faIcons,
+  faCar,
+  faMapLocationDot,
+  faRing,
+  faStar,
+  faUpRightFromSquare
 );
 
 createApp(App)

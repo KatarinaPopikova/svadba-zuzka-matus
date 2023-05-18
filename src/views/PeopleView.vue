@@ -13,13 +13,14 @@
           <font-awesome-icon
             icon="fa-solid fa-address-book"
             class="w-12 h-12 pr-3"
-          />Kontakty
+          />
+          Kontakty
         </h2>
       </div>
       <div class="w-full max-w-screen-xl">
         <div class="w-full">
           <h3
-            class="py-2"
+            class="py-2 font-bold"
             data-aos="fade-up"
             data-aos-duration="100"
             data-aos-delay="100"
@@ -28,14 +29,16 @@
           </h3>
           <div class="flex justify-evenly w-full">
             <ContactPerson
-              :path="'/img14.jpg'"
-              :name="'Svedok číslo 1'"
-              :phone="'+420 000 000 000'"
+              :path="'/svedok2.jpg'"
+              :name="'Zuzančina svědková'"
+              :text1="'Radka Horutová'"
+              :text2="'+420 773 966 240'"
             />
             <ContactPerson
-              :path="'/img12.jpg'"
-              :name="'Svedok číslo 2'"
-              :phone="'+420 000 000 000'"
+              :path="'/svedok1.jpg'"
+              :name="'Matúšův svěděk'"
+              :text1="'Roman Kmeť'"
+              :text2="'+421 915 338 310'"
             />
           </div>
         </div>
@@ -43,41 +46,33 @@
       <div class="w-full max-w-screen-xl py-10">
         <div class="w-full">
           <h3
-            class="py-2"
+            class="py-2 font-bold"
             data-aos="fade-up"
             data-aos-duration="100"
             data-aos-delay="100"
           >
             Řidiči
           </h3>
+          <p class="p-full pb-4">
+            Pokud se s námi rozhodnete veselit a nevíte, jak se dostat poté
+            domů, stačí si na svatbě najít tyto pány nebo jim zavolat a oni vás
+            odvezou.
+          </p>
           <div class="flex justify-evenly w-full flex-wrap">
             <ContactPerson
-              :path="'/img14.jpg'"
-              :name="'Řidič číslo 1'"
-              :phone="'+420 000 000 000'"
+              :name="'řidič do Valmezu'"
+              :text1="'František Hlavica'"
+              :text2="'+420 601 389 454'"
             />
-            <ContactPerson
-              :path="'/img12.jpg'"
-              :name="'Řidič číslo 2'"
-              :phone="'+420 000 000 000'"
-            />
-            <ContactPerson
-              :path="'/img14.jpg'"
-              :name="'Řidič číslo 3'"
-              :phone="'+420 000 000 000'"
-            />
-            <ContactPerson
-              :path="'/img12.jpg'"
-              :name="'Řidič číslo 4'"
-              :phone="'+420 000 000 000'"
-            />
+            <ContactPerson :name="'řidič do Suchdolu'" :text1="'+420 '" />
+            <ContactPerson :name="'řidič pro kohokoliv'" :text1="'+420 '" />
           </div>
         </div>
       </div>
       <div class="w-full max-w-screen-xl">
         <div class="w-full">
           <h3
-            class="py-2"
+            class="py-2 font-bold"
             data-aos="fade-up"
             data-aos-duration="100"
             data-aos-delay="100"
@@ -86,14 +81,15 @@
           </h3>
           <div class="flex justify-evenly w-full">
             <ContactPerson
-              :path="'/img14.jpg'"
+              :path="'/zuzka.jpg'"
               :name="'Zuzana Bayerová'"
-              :phone="'+420000000000'"
+              :text1="'+420 724 883 987'"
             />
             <ContactPerson
-              :path="'/img12.jpg'"
+              :path="'/matus.jpg'"
               :name="'Matúš Ivančo'"
-              :phone="'+420000000000'"
+              :text1="'+420 605 212 188'"
+              :text2="'+421 904 537 601'"
             />
           </div>
         </div>

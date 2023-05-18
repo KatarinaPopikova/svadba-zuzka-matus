@@ -19,12 +19,28 @@
       </div>
       <div class="flex justify-center items-center pt-10">
         <div class="max-w-screen-sm flex items-center flex-col">
-          <div data-aos="fade-up" data-aos-duration="200" data-aos-delay="200">
-            <p class="p-full px-2">
-              Vězte, že už všechno co potřebujeme máme – našli jsme sebe
-              nabzájem a to nám k životu stačí. Jsme minimalisté, a tudíž nás
-              netěší materiální věci – spíše zážitky a cestování. Budeme vděční,
-              když nám přispějete na nové autíčko.
+          <div>
+            <p
+              class="p-full px-2"
+              data-aos="fade-up"
+              data-aos-duration="200"
+              data-aos-delay="200"
+            >
+              Nevíte si rady s dary? <br />
+              Nápověda už je tady! <br />
+              Na domeček, autíčko<br />
+              přispějte nám maličko.
+            </p>
+            <p
+              class="p-full px-2 pt-8 opacity-60"
+              data-aos="fade-up"
+              data-aos-duration="200"
+              data-aos-delay="200"
+            >
+              Vězte, že vaše přítomnost je pro nás darem největším. Pokud nás
+              však chcete obdarovat, tak prosíme o finanční příspěvek.
+              Spotřebiče, křišťálové servisy a jiné hmotné věci u nás místo
+              nenajdou.
             </p>
           </div>
         </div>

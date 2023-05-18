@@ -14,9 +14,9 @@
             icon="fa-solid fa-square-check"
             class="w-12 h-12 pr-2"
           />
-          Rátame s vami :)
+          počítáme s vámi :)
         </h2>
-        <h3 class="opacity-30">Prosíme vyplniť do 26. 5. 2023</h3>
+        <h3 class="opacity-30">Prosíme vyplňte do 26. 5. 2023</h3>
       </div>
       <div
         class="flex justify-center items-center pt-10"
@@ -41,7 +41,7 @@
                 icon="fa-solid fa-rectangle-list"
                 class="pr-3"
               />
-              <span>Vyplniť dotazník</span>
+              <span>Vyplnit dotazník</span>
             </a>
           </div>
         </div>
