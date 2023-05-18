@@ -17,7 +17,7 @@
       <div class="w-full max-w-screen-xl">
         <div data-aos="fade-up" data-aos-duration="200" data-aos-delay="200">
           <h3 class="font-bold">Dresscode:</h3>
-          <div class="flex justify-center">
+          <div class="flex justify-center flex-wrap">
             <p class="colors bg-[#0ea5e9]"></p>
             <p class="colors bg-blue-800"></p>
             <p class="colors bg-green-700"></p>
@@ -47,7 +47,7 @@
               </a>
             </h3>
             <img
-              class="w-96 h-72 rounded-lg shadow-lg m-3"
+              class="sm:w-96 sm:h-72 w-76 h-52 rounded-lg shadow-lg m-3"
               src="@/assets/img/spYBCFw.jpeg"
               alt="Kostel"
             />
@@ -78,7 +78,7 @@
               </a>
             </h3>
             <img
-              class="w-96 h-72 rounded-lg shadow-lg m-3"
+              class="sm:w-96 sm:h-72 w-76 h-52 rounded-lg shadow-lg m-3"
               src="@/assets/img/fohrHe.jpeg"
               alt="Kulturní dům"
             />

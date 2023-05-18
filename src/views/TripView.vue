@@ -1,9 +1,9 @@
 <template>
   <section class="relative">
     <div
-      class="py-32 min-h-screen bg-green-200 text-green-900 flex justify-center items-center flex-col"
+      class="pt-36 pb-20 min-h-screen bg-green-200 text-green-900 flex justify-center items-center flex-col"
     >
-      <div class="absolute top-0">
+      <div class="absolute top-0 px-2">
         <h2 data-aos="fade-up" data-aos-duration="100" data-aos-delay="100">
           <font-awesome-icon icon="fa-solid fa-tree" class="w-14 h-14" />
           Tipy na výlet / Může se hodit

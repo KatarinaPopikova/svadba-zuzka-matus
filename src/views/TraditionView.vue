@@ -15,7 +15,7 @@
         </h2>
       </div>
 
-      <div class="flex justify-center items-center">
+      <div class="flex justify-center items-center mx-5">
         <div class="max-w-screen-sm flex items-center flex-col">
           <div data-aos="fade-up" data-aos-duration="200" data-aos-delay="200">
             <h3 class="font-bold pt-8">Námluvy / pytačky (SK/CZ)</h3>
