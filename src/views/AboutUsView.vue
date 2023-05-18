@@ -21,7 +21,7 @@ export default defineComponent({
 <template>
   <div
     class="fixed w-full h-screen bg-cover bg-center bg-no-repeat -z-20"
-    :style="`background-image: url(${bgImg.url}); background-position: ${bgImg.bg_x}% ${bgImg.bg_y}%`"
+    :style="`background-image: url(/${bgImg.url}); background-position: ${bgImg.bg_x}% ${bgImg.bg_y}%`"
   ></div>
   <CardSection @bg="saveBgImg" :bg-start-position="0" :card-range="[0, 1]" />
 </template>

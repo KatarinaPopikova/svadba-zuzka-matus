@@ -6,7 +6,6 @@
       <img
         class="h-2/3 w-auto rounded-lg object-cover"
         :style="`object-position: 85% 10%`"
-        src="@/assets/img/map_hearts.png"
         alt="map"
       />
     </div>
