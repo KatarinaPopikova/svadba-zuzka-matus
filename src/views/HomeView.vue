@@ -1,6 +1,6 @@
 <template>
   <header ref="navbar" class="fixed w-full z-50 p-5 text-white shadow-2xl">
-    <h1 ref="title" class="text-6xl">Zuzka & Matúš</h1>
+    <h1 ref="title" class="sm:text-6xl text-5xl">Zuzka & Matúš</h1>
     <NavBar
       class="lg:hidden"
       :sections="sections"
@@ -41,6 +41,7 @@ import TripView from "@/views/TripView.vue";
 import ProgramView from "@/views/ProgramView.vue";
 import TraditionView from "@/views/TraditionView.vue";
 import AccommodationView from "@/views/AccommodationView.vue";
+import GaleryView from "@/views/GaleryView.vue";
 import NavBar from "@/components/NavBar.vue";
 
 export default defineComponent({
@@ -56,6 +57,7 @@ export default defineComponent({
     PeopleView,
     WeddingView,
     AboutUsView,
+    GaleryView,
   },
   data() {
     return {
@@ -69,6 +71,7 @@ export default defineComponent({
         { name: "Dary", component: "GiftsView" },
         { name: "Kontakty", component: "PeopleView" },
         { name: "Formulář", component: "FormView" },
+        { name: "Galerie", component: "GaleryView" },
       ],
       activeIndex: 0,
     };

@@ -42,13 +42,21 @@
             </p>
           </div>
           <div data-aos="fade-up" data-aos-duration="200" data-aos-delay="200">
+            <h3 class="font-bold pt-8">Popravky (CZ)</h3>
+            <p class="p-full pt-3">
+              Při této příležitosti se svatebčané sejdou den po svatbě, aby se
+              postarali o jídlo, které zbylo. Hoduje se, povídá se, loučí se a
+              uklízí se vše potřebné.
+            </p>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="200" data-aos-delay="200">
             <h3 class="font-bold pt-8">Čepčenie (SK)</h3>
             <p class="p-full pt-3">
               Česky řečeno čepení je odvozeno od slova čepec, který je vyměněn
               nevěstě za věneček. Symbolizuje tak přechod stavu svobodného do
               stavu manželského (pod čepcem). Pokud nevěsta dovolí sejmout z
               hlavy věneček, vzdává se tam své svobody a stává se věrnou
-              manželskou svému ženichovi. Děje se tak během čepení, když odpoví
+              manželkou svému ženichovi. Děje se tak během čepení, když odpoví
               na otázku: „Či dovolíš vienok sňať a či radšej hlávku sťať?“ –
               Vienok sňať. Věneček pak dostane další svobodná žena, kterou čeká
               svatba nejdříve a pierko její partner.

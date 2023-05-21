@@ -20,6 +20,7 @@ import {
   faRing,
   faStar,
   faUpRightFromSquare,
+  faImages,
 } from "@fortawesome/free-solid-svg-icons";
 
 /* add icons to the library */
@@ -36,7 +37,8 @@ library.add(
   faMapLocationDot,
   faRing,
   faStar,
-  faUpRightFromSquare
+  faUpRightFromSquare,
+  faImages
 );
 
 createApp(App)

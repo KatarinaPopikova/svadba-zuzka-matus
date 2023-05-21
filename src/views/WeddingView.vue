@@ -96,7 +96,7 @@
         </div>
         <div data-aos="fade-up" data-aos-duration="200" data-aos-delay="200">
           <p class="p-full">
-            Auta nechejte prosím na parkovišti přes Restaurací u Bříz (
+            Auta nechejte prosím na parkovišti před Restaurací u Bříz (
             <a href="https://en.mapy.cz/s/hojunogapu">
               <font-awesome-icon icon="fa-solid fa-map-location-dot" />
             </a>

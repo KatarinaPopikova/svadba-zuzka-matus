@@ -26,6 +26,16 @@
               data-aos-duration="100"
               data-aos-delay="100"
             >
+              <div class="font-bold text-2xl flex-col mx-2 sm:mx-5">
+                Sobota 3.6. 2023
+              </div>
+            </div>
+            <div
+              class="flex justify-center lg:py-2"
+              data-aos="fade-up"
+              data-aos-duration="100"
+              data-aos-delay="100"
+            >
               <div class="program-description text-right"></div>
               <div class="program-time">od 8:00</div>
               <div class="program-description text-left">
@@ -174,6 +184,38 @@
               <div class="program-description text-right"></div>
               <div class="program-time">1:00</div>
               <div class="program-description text-left">DJ Bobo</div>
+            </div>
+            <div
+              class="flex justify-center lg:py-2"
+              data-aos="fade-up"
+              data-aos-duration="100"
+              data-aos-delay="100"
+            >
+              <div class="font-bold text-2xl flex-col mx-2 sm:mx-5">
+                Neděle 4.6. 2023
+              </div>
+            </div>
+            <div
+              class="flex items-center py-1 lg:py-2"
+              data-aos="fade-up"
+              data-aos-duration="100"
+              data-aos-delay="100"
+            >
+              <div class="program-description text-right">
+                mše v Bernarticích n/O
+              </div>
+              <div class="program-time">10:00</div>
+              <div class="program-description text-left"></div>
+            </div>
+            <div
+              class="flex items-center py-1 lg:py-2"
+              data-aos="fade-up"
+              data-aos-duration="100"
+              data-aos-delay="100"
+            >
+              <div class="program-description text-right"></div>
+              <div class="program-time">11:00</div>
+              <div class="program-description text-left">Popravky</div>
             </div>
           </div>
         </div>

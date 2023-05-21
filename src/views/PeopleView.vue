@@ -64,8 +64,11 @@
               :text1="'František Hlavica'"
               :text2="'+420 601 389 454'"
             />
-            <ContactPerson :name="'řidič do Suchdolu'" :text1="'+420 '" />
-            <ContactPerson :name="'řidič pro kohokoliv'" :text1="'+420 '" />
+            <ContactPerson
+              :name="'řidič do Suchdolu'"
+              :text1="'Jaroslav Pupík'"
+              :text2="'+420 731 174 771'"
+            />
           </div>
         </div>
       </div>
