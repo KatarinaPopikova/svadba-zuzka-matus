@@ -21,6 +21,8 @@ import {
   faStar,
   faUpRightFromSquare,
   faImages,
+  faAngleLeft,
+  faAngleRight,
 } from "@fortawesome/free-solid-svg-icons";
 
 /* add icons to the library */
@@ -38,7 +40,9 @@ library.add(
   faRing,
   faStar,
   faUpRightFromSquare,
-  faImages
+  faImages,
+  faAngleLeft,
+  faAngleRight
 );
 
 createApp(App)

@@ -1,5 +1,5 @@
 <template>
-  <GaleryCards :current="current" :max-number="total" />
+  <GaleryCards :current="current" :max-number="total" :link="link" />
   <div class="block w-full">
     <ListPagination
       :current="current"
@@ -19,10 +19,11 @@ export default {
   name: "GalleryWithPagination",
   components: { ListPagination, GaleryCards },
 
+  props: ["total", "link"],
+
   data() {
     return {
       current: 1,
-      total: 147,
     };
   },
 

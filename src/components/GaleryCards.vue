@@ -14,14 +14,14 @@
     <a
       v-for="n in getRange()"
       :key="n"
-      :href="require(`@/assets/gallery/photo${n}.webp`)"
+      :href="require(`@/assets${link}${n}.webp`)"
       class="aspect-square"
     >
       <img
         class="h-full w-full object-cover rounded-xl"
         loading="eager"
         :alt="alts.find((val) => val.index === n)?.alt"
-        :src="require(`@/assets/gallery/photo${n}.webp`)"
+        :src="require(`@/assets${link}${n}.webp`)"
       />
     </a>
   </lightgallery>
@@ -44,6 +44,9 @@ export default {
     maxNumber: {
       type: Number,
       default: 1,
+    },
+    link: {
+      type: String,
     },
   },
   data: () => ({

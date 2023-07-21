@@ -7,7 +7,10 @@
           @click.prevent="changePage(prevPage)"
           class="pagination-element"
         >
-          <font-awesome-icon icon="fa-solid fa-angle-left" />
+          <font-awesome-icon
+            icon="fa-solid fa-angle-left"
+            class="text-white opacity-70"
+          />
         </div>
 
         <div class="flex h-12 font-bold rounded-full bg-gray-100">
@@ -44,7 +47,10 @@
           @click.prevent="changePage(nextPage)"
           class="pagination-element"
         >
-          <font-awesome-icon icon="fa-solid fa-angle-right" />
+          <font-awesome-icon
+            icon="fa-solid fa-angle-right"
+            class="text-white opacity-70"
+          />
         </div>
       </div>
     </div>
