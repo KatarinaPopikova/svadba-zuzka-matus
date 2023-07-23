@@ -1,13 +1,15 @@
 <template>
-  <GaleryCards :current="current" :max-number="total" :link="link" />
-  <div class="block w-full">
-    <ListPagination
-      :current="current"
-      :total="total"
-      :per-page="16"
-      :page-range="2"
-      @page-changed="slidePhotos"
-    />
+  <div data-aos="fade-up" data-aos-duration="500">
+    <GaleryCards :current="current" :max-number="total" :link="link" />
+    <div class="block w-full">
+      <ListPagination
+        :current="current"
+        :total="total"
+        :per-page="16"
+        :page-range="2"
+        @page-changed="slidePhotos"
+      />
+    </div>
   </div>
 </template>
 

@@ -1,5 +1,11 @@
 <template>
-  <div class="flex mx-12 items-center justify-center">
+  <div
+    class="flex mx-12 items-center justify-center"
+    :class="{ hidden: pages < 2 }"
+    data-aos="fade-up"
+    data-aos-duration="500"
+    data-aos-delay="50"
+  >
     <div class="flex flex-col items-center my-3">
       <div class="flex text-gray-700">
         <div
@@ -134,6 +140,6 @@ export default defineComponent({
 
 <style scoped>
 .pagination-element {
-  @apply w-12 md:flex justify-center items-center hidden cursor-pointer leading-5 transition duration-150 ease-in rounded-full;
+  @apply w-12 flex justify-center items-center cursor-pointer leading-5 transition duration-150 ease-in rounded-full;
 }
 </style>

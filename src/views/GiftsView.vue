@@ -24,7 +24,7 @@
               class="p-full px-2"
               data-aos="fade-up"
               data-aos-duration="200"
-              data-aos-delay="200"
+              data-aos-delay="50"
             >
               Nevíte si rady s dary? <br />
               Nápověda už je tady! <br />

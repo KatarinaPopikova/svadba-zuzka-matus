@@ -1,7 +1,7 @@
 <template>
   <section class="relative">
     <div
-      class="min-h-screen bg-[#A67B5B] text-white flex justify-center items-center flex-col"
+      class="min-h-screen py-32 bg-[#A67B5B] text-white flex justify-center items-center flex-col"
     >
       <div
         class="absolute top-0"
@@ -14,47 +14,74 @@
             icon="fa-solid fa-square-check"
             class="w-12 h-12 pr-2"
           />
-          počítáme s vámi :)
+          Máme výsledky ze svatebních novin :)
         </h2>
-        <h3 class="opacity-30">Prosíme vyplňte do 26. 5. 2023</h3>
       </div>
       <div
         class="flex justify-center items-center pt-10"
         data-aos="fade-up"
-        data-aos-duration="200"
-        data-aos-delay="100"
+        data-aos-duration="300"
+        data-aos-delay="50"
       >
         <div class="max-w-screen-sm flex items-center flex-col">
           <div data-aos="fade-up">
-            <p class="p-full px-2">
-              Rádi bychom všechno připravili tak, abyste se na naší svatbě
-              cítili dobře a měli všechno, co budete potřebovat. Chtěli bychom
-              Vás tedy poprosit, abyste nám v tomto krátkém dotazníku
-              zodpověděli několik otázek, ať víme, s čím a s kým počítat.
-            </p>
-          </div>
-          <div class="mt-32 border-2 border-white w-fit text-xl">
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSeN0iA612AOrErB-blfc-38F_l1zYoMX63FbljYGwSvm0C8SA/viewform?usp=sf_link"
-              class="p-4 block"
-            >
-              <font-awesome-icon
-                icon="fa-solid fa-rectangle-list"
-                class="pr-3"
-              />
-              <span>Vyplnit dotazník</span>
-            </a>
+            <ol class="list-decimal text-2xl text-left ml-8 mr-5 w-fit">
+              <li>
+                Tak Zuzi to podle hodnoticich bude pry u vas mit doma pod
+                palcem;
+              </li>
+              <li>Ivancovi jako prijmeni nebylo prekvapeni;</li>
+              <li>
+                nejradsi by vam prali dvojcatka anebo kluka jako prvni mimco;
+              </li>
+              <li>deti mate mit alespon tri anebo i vic;</li>
+              <li>
+                to jestli si mate poridit zvire je asi ocividne na vas jelikoz
+                podle publika je to 50:50;
+              </li>
+              <li>
+                ale kdyby jste si meli nejake zvire poridit tak tady jsou
+                navrhy: Rybičky, Lamu, Jednorožce, Lachtana, Želvu, Fretku,
+                Slepičky, Kuřátko, Statkovou zvěř, Statkovou zvěř, Další pes,
+                Kapybara;
+              </li>
+              <li>nejvice si vas dokazou predstavit zit na vesnici;</li>
+              <li>a Matus ma pry solidni sanci na to se stat farmarem.</li>
+            </ol>
           </div>
         </div>
+      </div>
+      <div class="max-w-screen-xl my-16">
+        <GalleryWithPagination :total="7" :link="'/graphs/photo'" />
+      </div>
+
+      <p
+        class="text-4xl"
+        data-aos="fade-up"
+        data-aos-duration="500"
+        data-aos-delay="50"
+      >
+        A tady jsou pak umělecké výtvory na kterých jste ztvárnění 👍
+      </p>
+
+      <div class="max-w-screen-xl my-16">
+        <GalleryWithPagination :total="16" :link="'/draws/photo'" />
       </div>
     </div>
   </section>
 </template>
 
 <script>
+import GalleryWithPagination from "@/components/GalleryWithPagination.vue";
+
 export default {
   name: "FormView",
+  components: { GalleryWithPagination },
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+li {
+  @apply sm:pl-8;
+}
+</style>

@@ -60,7 +60,7 @@ export default {
         return this.maxNumber - 1;
       }
       const start = 16 * (this.current - 1) + 1;
-      const maxAllowed = Math.min(this.maxNumber - start, 16);
+      const maxAllowed = Math.min(this.maxNumber - start + 1, 16);
 
       return Array.from({ length: maxAllowed }, (_, index) => start + index);
     },

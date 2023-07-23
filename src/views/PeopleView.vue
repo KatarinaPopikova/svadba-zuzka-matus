@@ -44,15 +44,13 @@
         </div>
       </div>
       <div class="w-full max-w-screen-xl py-10">
-        <div class="w-full">
-          <h3
-            class="py-2 font-bold"
-            data-aos="fade-up"
-            data-aos-duration="100"
-            data-aos-delay="100"
-          >
-            Řidiči
-          </h3>
+        <div
+          class="w-full"
+          data-aos="fade-up"
+          data-aos-duration="100"
+          data-aos-delay="100"
+        >
+          <h3 class="py-2 font-bold">Řidiči</h3>
           <p class="p-full pb-4">
             Pokud se s námi rozhodnete veselit a nevíte, jak se dostat poté
             domů, stačí si na svatbě najít tyto pány nebo jim zavolat a oni vás

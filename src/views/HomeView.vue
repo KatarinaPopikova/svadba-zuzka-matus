@@ -70,7 +70,7 @@ export default defineComponent({
         { name: "Ubytování", component: "AccommodationView" },
         { name: "Dary", component: "GiftsView" },
         { name: "Kontakty", component: "PeopleView" },
-        { name: "Formulář", component: "FormView" },
+        { name: "Svatební noviny", component: "FormView" },
         { name: "Galerie", component: "GaleryView" },
       ],
       activeIndex: 0,

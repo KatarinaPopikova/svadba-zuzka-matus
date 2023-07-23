@@ -3,7 +3,7 @@
     class="px-5"
     data-aos="fade-up"
     data-aos-duration="500"
-    data-aos-delay="200"
+    data-aos-delay="50"
   >
     <img
       v-if="path"
